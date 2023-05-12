@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="app-wrap">
+        <header>
+            <div class="app-label">Meet your inspiration here!</div>
+        </header>
+        <main>
+            <input id="promptInput" type="text" class="searchButton" placeholder="Enter your prompt here..." rows="3"></textarea>
+            <button id="generate-btn" class="generateButton">Generate image</button>
+            <script src="imageGenerator.js" type="module"></script>
+            <div id="imageContainer"></div>
+            <a href="#" id="linkBtn" class="downloadButton" download="test.png"></a>
+        </main>
+    </div>
+</body>
+</html>

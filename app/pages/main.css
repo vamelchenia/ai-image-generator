@@ -1,0 +1,88 @@
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px, 15px, 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.searchBox {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 147, 139, 0.4);
+    border-radius: 10px 0px 10px 0px;
+    border-bottom: 3px solid rgba(236, 98, 107, 0.5);
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-out;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    background-color: rgba(255, 147, 139, 0.7);
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 25px 50px;
+
+}
+
+.generateButton {
+    width: 170px;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: #bb4782;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.downloadButton {
+    width: 170px;
+    height: 40px;
+    margin-bottom: 50px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+.downloadButton:hover {
+    font-weight: 600;
+
+}

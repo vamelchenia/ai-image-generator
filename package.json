@@ -1,0 +1,22 @@
+{
+    "dependencies": {
+        "@types/es6-shim": "^0.31.42",
+        "@types/express": "^4.17.17",
+        "@types/node": "^20.1.2",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2"
+    },
+    "scripts": {
+        "tsc": "tsc",
+        "start": "node build/server.js",
+        "build": "rm -rf build/* && tsc && cp -r app/pages/. build/pages && cp -r app/res/. build/res && cp app/controllers/imageGenerator.js build/controllers"
+    },
+    "devDependencies": {
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.0.4"
+    },
+    "imports": {
+        "build": "/node_modules/dotenv/config.js"
+    }
+      
+}
